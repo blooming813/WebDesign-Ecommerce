@@ -44,6 +44,29 @@ p {
   margin: 15px 0 20px 0;
 }
 
+button.normal{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+}
+
+button.outline{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
 .section-p1 {
   padding: 40px 80px;
 }
@@ -113,7 +136,10 @@ body {
 /* Home page */
 #hero-wrap,
 #fe-wrap,
-#pro-wrap{
+#pro-wrap,
+#pro2-wrap,
+#sm-wrap,
+#ban3-wrap{
   width: 1280px;
   margin: 0 auto; 
 }
@@ -269,4 +295,193 @@ body {
   justify-content: center;
   align-items: center;
   padding: 80px 10px;
+}
+
+#banner h4,
+#banner h2 {
+  color: white;
+  padding: 10px 0;
+}
+
+#banner > h2>span {
+  color: rgb(255, 20, 20);
+}
+
+#banner button:hover{
+  background-color: #088178;
+}
+
+#pro2-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+#product2{
+  text-align: center;
+}
+
+#product2 .pro-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px 20px;
+}
+
+#product2 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+  margin: 15px 0;
+  transition: 0.2s ease-out;
+  position: relative;
+}
+
+#product2 .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+  transform: scale(1.02);
+}
+
+#product2 .pro img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product2 .pro .des{
+  text-align: start;
+  padding: 10px 0;
+
+}
+
+#product2 .pro .des .star{
+  color: #dae71e;
+  font-size: 20px;
+}
+
+#product2 .pro .des h5{
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 16px;
+}
+
+#product2 .pro .des h4{
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #088178;
+}
+
+#product2 .pro .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+#sm-wrap,
+#ban3-wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sm-banner button{
+  margin-top: 20px;
+}
+
+#sm-banner .banner-box{
+  background-image: url(/assets/imgaes/banner/b17.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 30px;
+  min-width:48%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#sm-banner .banner-box2{
+  background-image: url(/assets/imgaes/banner/b10.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 30px;
+  min-width: 48%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#sm-banner .banner-box:hover button,
+#sm-banner .banner-box2:hover button{
+  background-color: #088178;
+  border: 1px solid #088178;
+}
+
+.banner-box h2,
+.banner-box h4,
+.banner-box span,
+.banner-box2 h2,
+.banner-box2 h4,
+.banner-box2 span{
+  color: #fff;
+}
+
+.banner-box h2,
+.banner-box2 h2{
+  margin: 8px 0;
+}
+
+.banner-box h4,
+.banner-box2 h4{
+  font-weight: 300;
+}
+
+#banner3 .banner-box{
+  background-image: url(/assets/imgaes/banner/b7.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 30vh;
+  padding: 15px 20px;
+  min-width: 30%;
+  margin-bottom: 30px;
+}
+
+#banner3 .banner-box3{
+  background-image: url(/assets/imgaes/banner/b18.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 30vh;
+  padding: 15px 20px;
+  min-width: 30%;
+  margin-bottom: 30px;
+}
+
+#banner3 h2{
+  font-size: 18px;
+}
+
+#banner3 h3{
+  font-size: 14px;
 }
