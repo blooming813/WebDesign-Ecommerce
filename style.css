@@ -402,7 +402,7 @@ body {
 }
 
 #sm-banner .banner-box{
-  background-image: url(images/banner/b17.jpg);
+  background-image: url(./images/banner/b17.jpg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
