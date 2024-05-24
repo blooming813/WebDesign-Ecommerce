@@ -120,7 +120,6 @@ body {
   cursor: pointer;
 }
 
-
 #navbar li a{
     text-decoration: none;
     color: rgb(53, 53, 53);
@@ -144,6 +143,9 @@ body {
   left: 20px;
 }
 
+#close{
+  display: none;
+}
 
 /* Home page */
 #hero{
@@ -303,6 +305,7 @@ body {
 #banner h4,
 #banner h2 {
   color: white;
+  text-align: center;
   padding: 10px 0;
 }
 
@@ -395,7 +398,7 @@ body {
 #banner3{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 20px 80px;
 }
 
@@ -600,6 +603,10 @@ body {
 
 /* media query */
 @media (max-width:799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
   #navbar{
     display: flex;
     flex-direction: column;
@@ -612,6 +619,7 @@ body {
     width: 300px;
     background-color: #e3e6f3;
     box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+    transition: right 0.3s ease-out;
     padding: 80px 0 0 10px;
     z-index: 999;
   } 
@@ -621,7 +629,7 @@ body {
   }
 
   #navbar li{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   #mobile{
@@ -629,4 +637,217 @@ body {
     align-items: center;
     cursor: pointer;
   }
+
+  #close{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 32px;
+  }
+
+  #lg-cart{
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0px 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #feature {
+    justify-content: center;
+  }
+
+  #feature .fe-box {
+    margin: 15px 15px;
+  }
+
+  #product1 .pro-container,
+  #product2 .pro-container {
+    justify-content: center;
+  }
+
+  #product1 .pro,
+  #product2 .pro {
+    margin: 15px 15px;
+  }
+
+  #banner{
+    height: 35vh;
+  }
+
+  #banner h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  #sm-banner,
+  #banner3{
+    flex-wrap: wrap;
+  }
+
+  #banner3 .banner-box {
+    min-width: 100%;
+  }
+
+  #newsletter {
+    flex-direction: column;
+  }
+
+  .newstext h2{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .form {
+    width: 70%;
+  }
+}
+
+@media (max-width:1043px){
+
+  #sm-banner .banner-box,
+  #sm-banner .banner-box2 {
+    min-width: 100%;
+    height: 30vh;
+  }
+
+  #sm-banner .banner-box{
+    margin-bottom: 30px;
+  }
+
+  #sm-banner, #banner3 {
+    flex-wrap: wrap;
+  }
+
+  #banner3 .banner-box {
+    min-width: 100%;
+  }
+}
+
+@media (max-width:1043px){
+  #header {
+    padding: 20px 40px;
+}
+  #hero {
+    height: 40vh;
+    padding: 0px 40px;
+    background-position: top 30% right 60%;
+}
+#hero h4{
+  font-size: 20px;
+}
+#hero h2{
+  font-size: 30px;
+  line-height: 45px;
+}
+
+#hero h1{
+  font-size: 30px;
+  line-height: 40px;
+}
+#hero p{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#hero button {
+  scale: 0.8;
+  left: 0;
+}
+
+.section-p1 {
+  padding: 30px 30px;
+}
+
+#product1 .pro-text{
+  padding: 0 40px;
+}
+
+#product1 .pro-container,
+#product2 .pro-container {
+  padding: 20px 20px;
+}
+
+#product1 .pro, #product2 .pro {
+  margin: 15px 4px;
+}
+
+#product1 .pro,
+#product2 .pro {
+  min-width: 186px;
+}
+
+#feature .fe-box {
+  width: 150px;
+}
+
+#banner h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.banner-box h2, .banner-box2 h2 {
+  font-size: 30px;
+  line-height: 32px;
+}
+
+#sm-banner .banner-box,
+#sm-banner .banner-box2{
+  height: 30vh;
+}
+
+#sm-banner, #banner3 {
+  padding: 20px 40px;
+}
+
+#sm-banner .banner-box,
+#banner3 .banner-box {
+  margin-bottom: 20px;
+}
+
+#sm-banner, #banner3{
+  padding: 0px 40px 20px 40px;
+}
+
+#product2 .pro-text{
+  margin-top: 30px;
+}
+.section-m1 {
+  margin: 0px 0;
+}
+
+.newstext h2 {
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.newstext p {
+  font-size: 14px;
+  text-align: center;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  background-color: #251d31;
+}
+
+.form {
+  width: 90%;
+}
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 40px;
+}
+#footer .copyright p{
+  font-size: 12px;
+}
 }
